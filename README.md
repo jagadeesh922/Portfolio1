@@ -1,2 +1,3 @@
 Hello, I am a B.Tech student interested in computer science, artificial intelligence, data science, and software development. This repository contains my learning activities, projects, assignments, and practical work as I develop my technical skills and explore different areas of technology.
 I am currently learning programming, Git, GitHub, and software development.
+This repository documents my academic and technical learning journey.
