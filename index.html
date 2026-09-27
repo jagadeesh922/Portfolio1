@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagadeesh Portfolio</title>
+
+    <title>Jagadeesh Gujjala | Portfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #f4f4f4;
             color: #222;
         }
@@ -17,67 +23,218 @@
             background: #222;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        nav {
+            background: #111;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
             max-width: 900px;
             margin: 30px auto;
-            padding: 25px;
+            padding: 30px;
             background: white;
             border-radius: 10px;
         }
 
         h2 {
             border-bottom: 2px solid #222;
-            padding-bottom: 8px;
+            padding-bottom: 10px;
         }
 
         .project {
             margin: 20px 0;
-            padding: 15px;
+            padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
+        }
+
+        .project a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #222;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        #contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Jagadeesh Gujjala</h1>
-    <p>B.Tech Student | AI & Data Science</p>
-</header>
+    <header>
+        <h1>Jagadeesh Gujjala</h1>
+        <p>B.Tech Student | Artificial Intelligence & Data Science</p>
+    </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Hello, I am a B.Tech student interested in computer science,
-        artificial intelligence, data science, and software development.
-        I am developing my technical skills through academic projects,
-        programming practice, and practical learning.
-    </p>
-</section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<section>
-    <h2>Projects</h2>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Hello! I am Jagadeesh Gujjala, a B.Tech student specializing in
+            Artificial Intelligence and Data Science. I am interested in
+            programming, artificial intelligence, data science, databases,
+            and web development.
+        </p>
 
-    <div class="project">
-        <h3>Student Management System</h3>
-        <p>A project designed to manage student information and records.</p>
-    </div>
+        <p>
+            I am continuously developing my technical skills through
+            academic assignments, programming practice, and practical
+            projects.
+        </p>
+    </section>
 
-    <div class="project">
-        <h3>GitHub Portfolio</h3>
-        <p>A personal portfolio website created using HTML and GitHub Pages.</p>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Programming Practice</h3>
-        <p>A collection of programming exercises and academic work.</p>
-    </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>
+                A personal portfolio website created using HTML and CSS
+                to showcase my education, skills, projects, and contact
+                information.
+            </p>
 
-</section>
+            <a href="https://github.com/jagadeesh922/Portfolio1"
+               target="_blank">
+                View Project on GitHub
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Hello World GitHub Project</h3>
+            <p>
+                A beginner Git and GitHub project created to practice
+                repositories, commits, branches, and version control.
+            </p>
+
+            <a href="https://github.com/jagadeesh922/Portfolio1"
+               target="_blank">
+                View Project on GitHub
+            </a>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">C Programming</span>
+            <span class="skill">SQL</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">HTML</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Data Structures</span>
+            <span class="skill">Artificial Intelligence</span>
+            <span class="skill">Data Science</span>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p><strong>Name:</strong> Jagadeesh Gujjala</p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/jagadeesh922" target="_blank">
+                github.com/jagadeesh922
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Jagadeesh Gujjala | Portfolio</p>
+    </footer>
 
 </body>
 </html>
